@@ -18,6 +18,6 @@ COPY app.py /var/www/app.py
 
 WORKDIR /var/www 
 
-EXPOSE 65535
+EXPOSE 8080
 
 CMD ["python", "app.py"]
