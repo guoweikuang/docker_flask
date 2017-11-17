@@ -2,9 +2,10 @@ FROM ubuntu
 
 MAINTAINER guoweikuang2015@gmail.com
 
+ADD sources.list /etc/apt/sources.list
 
 RUN apt-get update -y \
-    && apt-get install -y python-pip python-dev build-essential
+    && apt-get install -y python-pip python-dev build-essential nginx curl net-tools vim wget
 ADD requirements.txt requirements.txt 
 
 
@@ -17,6 +18,6 @@ COPY app.py /var/www/app.py
 
 WORKDIR /var/www 
 
-EXPOSE 1
+EXPOSE 65535
 
 CMD ["python", "app.py"]
