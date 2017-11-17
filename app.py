@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
+import time
 from flask import Flask
+
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+    time.sleep(4)
     return 'Hello, world'
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=65535)
+    app.run(host="0.0.0.0", port=8080)
