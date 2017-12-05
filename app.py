@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 import time
 from flask import Flask
-
+import random
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    time.sleep(4)
+    time.sleep(random.randint(0, 4))
     return 'Hello, world'
 
 
