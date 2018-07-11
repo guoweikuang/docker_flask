@@ -5,7 +5,7 @@ MAINTAINER guoweikuang2015@gmail.com
 ADD sources.list /etc/apt/sources.list
 
 RUN apt-get update -y \
-    && apt-get install -y python-pip python-dev build-essential nginx curl net-tools vim wget
+    && apt-get install -y python-pip
 ADD requirements.txt requirements.txt 
 
 
