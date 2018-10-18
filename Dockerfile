@@ -5,7 +5,7 @@ MAINTAINER guoweikuang2015@gmail.com
 ADD sources.list /etc/apt/sources.list
 
 RUN apt-get update -y \
-    && apt-get install -y python-pip
+    && apt-get install -y python-pip curl
 ADD requirements.txt requirements.txt 
 
 
