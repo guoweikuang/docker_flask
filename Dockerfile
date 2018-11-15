@@ -12,8 +12,7 @@ ADD requirements.txt requirements.txt
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt 
 
-
-RUN mkdir -p /var/www 
+RUN mkdir -p /var/www
 COPY app.py /var/www/app.py 
 
 WORKDIR /var/www 
