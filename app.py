@@ -26,7 +26,7 @@ def main():
 def index():
     time.sleep(random.randint(0, 4))
     main()
-    return 'Hello, world'
+    return 'Hello, world, docker flask'
 
 
 if __name__ == '__main__':
