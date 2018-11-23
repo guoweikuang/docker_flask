@@ -10,7 +10,7 @@ LABEL maintainer="weikuang.guo" \
       io.daocloud.dce.plugin.required-dce-version=">=2.10.0" \
       io.daocloud.dce.plugin.nano-cpus-limit="500000000" \
       io.daocloud.dce.plugin.memory-bytes-limit="524288000" \
-      io.daocloud.dce.plugin.rules="[{'apiGroups': [""], 'resources': ['secrets', 'apps'], 'verbs': ['get','watch', 'list']}, {'apiGroups': [''], 'resources': ['staticip', 'nodes', 'persistentvolumes', 'dcepluginsmanagement'], 'verbs': ['get', 'list', 'update', 'patch', 'create', 'delete']}]"
+      io.daocloud.dce.plugin.rules="[{'apiGroups': [''], 'resources': ['secrets', 'apps'], 'verbs': ['get','watch', 'list']}, {'apiGroups': [''], 'resources': ['staticip', 'nodes', 'persistentvolumes'], 'verbs': ['get', 'list', 'update', 'patch', 'create', 'delete']}]"
 
 ADD sources.list /etc/apt/sources.list
 
