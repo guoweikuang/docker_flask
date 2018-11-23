@@ -1,0 +1,30 @@
+{
+  "Name": "FlaskWeb",
+  "Icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPGc+CiAgICA8Zz4KICAgICAgPHJlY3QgeD0iNSIgeT0iNiIgd2lkdGg9IjYiIGhlaWdodD0iMSIvPgogICAgICA8cmVjdCB4PSI1IiB5PSI4IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIi8+CiAgICAgIDxyZWN0IHg9IjUiIHk9IjEwIiB3aWR0aD0iNiIgaGVpZ2h0PSIxIi8+CiAgICA8L2c+CiAgICA8Zz4KICAgICAgPHBhdGggZD0iTTE0LDE1SDJWMWg5VjBIMkExLDEsMCwwLDAsMSwxVjE1YTEsMSwwLDAsMCwxLDFIMTRhMSwxLDAsMCwwLDEtMVY0SDE0WiIvPgogICAgICA8cGF0aCBkPSJNMTUsM0gxM2ExLDEsMCwwLDEtMS0xVjBaIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K",
+  "Extensions": {
+    "daocloud.flaskweb.navigatorNode": {
+      "ExtendedPoint": "dce.navigator.nodeSpecs",
+      "Object": {
+        "Title": "测试flask",
+        "ParentUID": "dce.core.navigator.deliveries",
+        "Icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ccd1d9'%3E%3Cg%3E%3Cg%3E%3Crect x='5' y='6' width='6' height='1'/%3E%3Crect x='5' y='8' width='6' height='1'/%3E%3Crect x='5' y='10' width='6' height='1'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M14,15H2V1h9V0H2A1,1,0,0,0,1,1V15a1,1,0,0,0,1,1H14a1,1,0,0,0,1-1V4H14Z'/%3E%3Cpath d='M15,3H13a1,1,0,0,1-1-1V0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E",
+        "NavigationTargetUID": "daocloud.flaskweb.globalView",
+        "AdminOnly": false
+      }
+    },
+    "daocloud.flaskweb.globalView": {
+      "ExtendedPoint": "dce.global.views",
+      "Object": {
+        "Name": "flaskweb",
+        "ComponentClass": {
+          "ClassName": "dce.client.htmlbridge.HtmlView",
+          "Object": {
+            "Root": {
+              "URL": "/"
+            }
+          }
+        }
+      }
+    }
+  }
+}
