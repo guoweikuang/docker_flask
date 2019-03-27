@@ -1,4 +1,4 @@
-FROM daocloud.io/python:2.7-alpine
+FROM daocloud.io/python:3.6-alpine
 
 MAINTAINER guoweikuang2015@gmail.com
 

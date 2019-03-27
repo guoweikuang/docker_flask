@@ -3,15 +3,20 @@ import time
 from flask import Flask
 from flask import request
 import random
+import psutil
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    print(request.remote_addr)
-    print(request.headers)
-    return 'Hello, world, docker flask'
+    print("hello, world")
+    return 'Hello, world, docker guoweikuang'
+
+@app.route('/disk/<path:int>')
+def disk_usage(path):
+    usage = psutil.disk_usage(path)
+    print(usage)
 
 
 if __name__ == '__main__':
